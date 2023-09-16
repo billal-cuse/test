@@ -26,6 +26,7 @@ app.post("/", upload.single("avatar") , (req, res) => {
   res.sendFile(path.join(__dirname,'./index.html'));
 
 });
+console.log(process.env.billal)
 
 app.listen(process.env.port, () => {
   console.log(`server running on http://192.168.0.1:8080`);
