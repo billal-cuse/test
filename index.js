@@ -27,6 +27,6 @@ app.post("/", upload.single("avatar") , (req, res) => {
 
 });
 
-app.listen(8080, "192.168.0.1", () => {
+app.listen(process.env.port, () => {
   console.log(`server running on http://192.168.0.1:8080`);
 });
